@@ -188,7 +188,7 @@
 
         try {
             loading.value = true;
-            errorList.length = 0; // Clear previous errors
+
             if (!(propertyFormObj.price > 0))
                 errorList.push('Price cannot be negative.');
             if (!(propertyFormObj.bedrooms >= 1))
