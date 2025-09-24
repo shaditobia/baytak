@@ -197,7 +197,8 @@
                 errorList.push('Bathrooms must be 1 or more.');
             if (!(propertyFormObj.area >= 10))
                 errorList.push('Area must be at least 10 square meters.');
-
+            if (!(propertyFormObj.images.length >= 5))
+                errorList.push('Please upload at least 5 images.');
             if (errorList.length > 0) {
                 console.error('Validation errors:', errorList);
                 return;
@@ -255,6 +256,7 @@
     };
     const handleImageUpload = async (event) => {
         const files = event.target.files;
+
         if (files.length > 0) {
             isImageUploading.value = true;
             try {
