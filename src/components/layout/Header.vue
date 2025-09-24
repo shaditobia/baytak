@@ -1,7 +1,8 @@
 <template>
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid">
-            <img src="@/assets/dark-logo.png" alt="Logo" style="width: 150px;" class="navbar-brand" />
+        <div class="container-fluid"><a href="#"><img src="@/assets/dark-logo.png" alt="Logo" style="width: 150px;"
+                    class="navbar-brand" /></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
