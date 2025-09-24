@@ -256,8 +256,10 @@
     };
     const handleImageUpload = async (event) => {
         const files = event.target.files;
-
-        if (files.length > 0) {
+        if (files.length + propertyFormObj.images.length > 5) {
+            swal.showError('You can upload a maximum of 5 images.');
+            return;
+        } else if (files.length > 0) {
             isImageUploading.value = true;
             try {
                 const uploadedImages = await Promise.all(
