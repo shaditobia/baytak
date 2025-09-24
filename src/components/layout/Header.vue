@@ -16,7 +16,8 @@
 
                     <li class="nav-item">
                         <router-link class="nav-link" :to="{ name: App_Route_Names.PROPERTY_LIST }"
-                            v-if="authStore.isAuthenticated && authStore.roleOptions.includes('seller')">Property List
+                            v-if="authStore.isAuthenticated && (authStore.roleOptions.includes('seller') || authStore.roleOptions.includes('admin'))">Property
+                            List
                         </router-link>
                     </li>
                     <li class="nav-item"
